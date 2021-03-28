@@ -1,0 +1,420 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+
+/* header */
+
+.navbar-brand {
+    padding-left: 5%;
+    width: 25%;
+}
+.logo {
+    height: 4.375rem;
+    width: 15.625rem;
+}
+
+.navbar {
+    padding: 20px 20px;
+    background-color: black;
+}
+
+.navbar-nav {
+    margin-left: 70%;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    margin: 0 1rem;
+    border: solid black;
+    
+}
+
+.nav-link:hover {
+    border-bottom: solid #e02128;
+    transition: all ease-in-out;
+}
+
+.active {
+    border-bottom: solid #e02128;
+    transition: all ease-in-out;
+}
+
+/* title */
+
+#title {
+    background-color: black;
+    margin-top: 1.25rem;
+}
+
+.signup-text {
+    margin-top: 5rem;
+    margin-bottom: 1.25rem;
+}
+
+.signup-text h1 {
+    text-align: center;
+    font-family: 'Passion One', cursive; 
+    font-size: 3.75rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+span {
+    color: #e02128;
+}
+
+.title-image {
+    width: 100%;
+    height: 35rem;
+}
+
+.signup-btn {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5625rem;
+    width: 7.5rem;
+    height: 3.125rem;
+}
+
+/* About */
+
+#about {
+    background-color: black;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem; 
+    width: 100%;
+    /* height: 25rem; */
+    padding: 50px 50px;
+}
+
+.note {
+    margin: 2.5rem;
+    margin: 20px;
+    color: #fff;
+    line-height: 3;
+
+}
+
+.note h1{
+    font-family: 'Passion One', cursive;
+    color: #fff;
+    font-size: 3.125rem;
+    margin: 2.5rem;
+} 
+
+.note h3 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.watchnow-btn {
+    font-size: 1.5625rem;
+    width: 12.5rem;
+    height: 3.125rem;
+    font-family: 'Anton', sans-serif;
+    margin: 2.5rem;
+}
+
+#footer {
+    background-color: #545454;
+    padding: 2% 42%;
+    text-align: center;
+    font-size: 100%;
+}
+
+/* WATCH NOW */
+
+/* MOVIES */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+.movies-h1 {
+    text-align: center;
+    font-family: 'Passion One', cursive; 
+    font-size: 3.75rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6,100%);
+  overflow:hidden;
+  scroll-behavior: smooth;
+}
+
+.wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin: 20px 0;
+    height: 100%;
+}    
+.wrapper section .item {
+      padding: 0 2px;
+      transition: duration all;
+      cursor: pointer;
+}      
+.wrapper section .item:hover { 
+      margin: 0 0;
+      transform: scale(1.2);
+    }
+      
+.wrapper section .item img {
+    width: 100%;
+    height: 100%;
+}
+    
+.wrapper section a {
+      position: absolute;
+      color: #fff;
+      text-decoration: none;
+      font-size: 6em;
+      background:rgb(0,0,0);
+      width: 40px;
+      padding: 0px;
+      margin: 0;
+      text-align: center; 
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+}  
+.wrapper section a:nth-of-type(1) {
+        /* top: 0; 
+        bottom: 0; */ 
+        left: 0; 
+        background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+.wrapper section a:nth-of-type(2) {
+        /* top:0; bottom:0;*/ right: 0; 
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+/* SERIES */
+
+#TV-series {
+    margin: 100px auto;
+}
+
+/* UPCOMING */
+
+#upcoming {
+    margin: 100px auto;
+}
+
+
+/* LOGIN */
+
+.login-bg{
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 120%;
+  
+}
+
+.login { 
+    position: relative;
+    margin: 100px auto;
+    width:450px;
+    height: 450px;
+    padding: 50px;
+    background: rgba(000, 000, 000, 0.75);
+    border-radius: 20px;
+}
+
+.login h1{
+    text-align: center;
+    font-family: 'Passion One', cursive; 
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.5;
+}
+
+input { 
+    width: 100%; 
+    margin-bottom: 10px; 
+    background: rgba(0,0,0,0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+  }
+  input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+.login button{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5625rem;
+    width: 7.5rem;
+    height: 3.125rem;
+}
+
+/* SIGN UP */
+.signup-bg{
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 120%;
+    
+}
+
+.signup { 
+      position: relative;
+      margin: 100px auto;
+      width:450px;
+      height: 600px;
+      padding: 50px;
+      background: rgba(000, 000, 000, 0.75);
+      border-radius: 20px;
+}
+  
+.signup h1{
+      text-align: center;
+      font-family: 'Passion One', cursive; 
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1.5;
+}
+
+.signup button{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5625rem;
+    width: 7.5rem;
+    height: 3.125rem;
+}
+
+@media (max-width: 768px) {
+    .title-image{
+        height: 18.75rem;
+    }
+    #about {
+        margin-top: 0;
+    }
+    .navbar-nav {
+        margin-left: 0;
+    }
+    .title {
+        overflow: hidden;
+        position: relative;
+    }
+    .marvel-title-image {
+        opacity: 0.6;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: fit-content;
+    }
+    .signup-text{
+        position: relative;
+        z-index: 1;
+    }
+    .signup-text h1{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 426px){
+    .title-image{
+        height: 18.75rem;
+    }
+    .navbar-brand {
+        padding-left: 0;
+        margin: 0;
+        width: 25%;
+    }
+    #about {
+        margin-top: 0;
+    }
+    .navbar-nav {
+        margin-left: 0;
+    }
+    .logo {
+        width: 300%;
+    }
+    .title {
+        overflow: hidden;
+        position: relative;
+    }
+    .marvel-title-image {
+        opacity: 0.6;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: fit-content;
+    }
+    .signup-text{
+        position: relative;
+        z-index: 1;
+    }
+    .signup-text h1{
+        font-size: 2rem;
+    }
+    .note h1{
+        font-size: 200%;
+        margin: 5% 0;
+        padding: 0;
+    }
+    .note h3, p{
+        font-size: 70%;
+        margin: 5% 0;
+    }
+    .watchnow-btn{
+        margin: 10% auto;
+    }
+    #footer {
+        padding: auto;
+        font-size: 50%;
+    }
+    .signup-bg{
+        width: 200%;
+        height: 200%;
+    }
+    .signup{
+        width: 100%;
+        height: 200%;
+        margin: 50%;
+    }
+    .wrapper section a{
+        font-size: 200%;
+    }
+    .movies-h1 {
+        font-size: 200%;
+    }
+    .login{
+        width: 100%;
+        height: 200%;
+    }
+    .login-bg{
+        width: 100%;
+        height: 50%;
+    }
+
+}
